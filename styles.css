@@ -1,4 +1,5 @@
 /*GLOBAL*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
   width: 100vw;
 }
@@ -28,24 +29,30 @@ ul {
   background-color: #1f2937;
 }
 
+/*HEADER lOGO*/
 li:first-child {
   color: #f9faf8;
   font-size: 24px;
   margin-right: auto;
+  font-weight: bold;
 }
 
 .hero-mainContent {
-  border: 1px solid red;
   display: flex;
+  margin: 6rem 0px;
 }
 .hero-left {
-  border: 1px solid green;
-
   flex: 1;
+  border: 1px solid red;
+  padding: 48px;
 }
 .hero-right {
-  border: 1px solid magenta;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
+  color: #e5e7eb;
 }
 
 .hero-mainTxt + p,
@@ -54,10 +61,21 @@ li {
   font-size: 18px;
   list-style: none;
 }
+
 .hero-mainTxt {
   font-size: 48px;
   font-weight: 800;
   color: #f9faf8;
+}
+
+button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  margin-top: 18px;
 }
 
 /*MAIN BODY*/
@@ -66,4 +84,9 @@ li {
 .two {
   flex: 1;
   padding: 0 12rem;
+}
+
+.two-header {
+  font-size: 36px;
+  font-weight: 800;
 }
