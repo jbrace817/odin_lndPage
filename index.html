@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Landing Page</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <ul>
-        <li>Header Logo</li>
-        <li>Header link one</li>
-        <li>Header link two</li>
-        <li>Header link three</li>
-      </ul>
-    </header>
-    <section>
+    <section class="hero">
+      <header>
+        <ul>
+          <li>Header Logo</li>
+          <li>Header link one</li>
+          <li>Header link two</li>
+          <li>Header link three</li>
+        </ul>
+      </header>
+
       <div>
-        <h1>This website is awesome</h1>
+        <p class="hero-main">This website is awesome</p>
         <p>
           This website has some subtext that goes here under the main title.
           It's a smaller font and the color is lower contrast
@@ -25,7 +26,8 @@
         <button>Sign up</button>
       </div>
     </section>
-    <section>
+
+    <section class="two">
       <h2>Some Random Information</h2>
       <div class="card">
         <div class="box"></div>
@@ -44,7 +46,7 @@
         <p>this is some subtext under an illustration or image</p>
       </div>
     </section>
-    <section>
+    <section class="three">
       <blockquote>
         <p>
           This is an inspiring quote, or tetimonial from a customer. Maybe it's
@@ -54,7 +56,8 @@
       </blockquote>
       <figcaption>-Thor, God of Thunder</figcaption>
     </section>
-    <section>
+
+    <section class="four">
       <div>
         <h2>Call to action! it's time!</h2>
         <p>Sign up for our product by clicking that button right over there</p>
@@ -62,5 +65,12 @@
       </div>
     </section>
     <footer>Copyright &copy; The Odin Project 2021</footer>
+
+    <script>
+      let w = window.innerWidth;
+      let h = window.innerHeight;
+
+      let x = document.querySelector('body');
+    </script>
   </body>
 </html>
