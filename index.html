@@ -10,10 +10,10 @@
     <section class="hero">
       <header>
         <ul>
-          <li>Header Logo</li>
-          <li>Header link one</li>
-          <li>Header link two</li>
-          <li>Header link three</li>
+          <li><a href="#">Header Logo</a></li>
+          <li><a href="#">Header link one</a></li>
+          <li><a href="#">Header link two</a></li>
+          <li><a href="#">Header link three</a></li>
         </ul>
       </header>
 
@@ -54,18 +54,20 @@
       </div>
     </section>
     <section class="three">
-      <blockquote>
-        <p>
-          This is an inspiring quote, or tetimonial from a customer. Maybe it's
-          just filling up space or maybe people will actually read it. Who
-          knows? All I know is that it looks nice.
-        </p>
-      </blockquote>
-      <figcaption>-Thor, God of Thunder</figcaption>
+      <div class="three-main">
+        <blockquote>
+          <p>
+            This is an inspiring quote, or tetimonial from a customer. Maybe
+            it's just filling up space or maybe people will actually read it.
+            Who knows? All I know is that it looks nice.
+          </p>
+        </blockquote>
+        <figcaption>-Thor, God of Thunder</figcaption>
+      </div>
     </section>
 
     <section class="four">
-      <div>
+      <div class="four-main">
         <h2>Call to action! it's time!</h2>
         <p>Sign up for our product by clicking that button right over there</p>
         <button>Sign up</button>
@@ -74,10 +76,10 @@
     <footer>Copyright &copy; The Odin Project 2021</footer>
 
     <script>
-      let w = window.innerWidth;
+      let w = document.querySelector('footer');
       let h = window.innerHeight;
 
-      let x = document.querySelector('body');
+      let x = document.querySelector('.two-cards').clientWidth;
     </script>
   </body>
 </html>

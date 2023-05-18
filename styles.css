@@ -1,5 +1,9 @@
-/*GLOBAL*/
+/*FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+/*GLOBAL*/
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +31,11 @@ ul {
 }
 .hero {
   background-color: #1f2937;
+}
+
+li > a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 /*HEADER lOGO*/
@@ -127,4 +136,30 @@ button {
   width: 9rem;
   height: 9rem;
   border-radius: 10px;
+}
+
+/*SECTION THREE*/
+.three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  color: #1f2937;
+  padding: 6rem;
+}
+blockquote {
+  padding: none;
+}
+.three-main {
+  width: 47rem;
+}
+figcaption {
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
 }
